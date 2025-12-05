@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/barbearia
+    username: barbearia
+    password: barbearia
+    driver-class-name: org.postgresql.Driver
