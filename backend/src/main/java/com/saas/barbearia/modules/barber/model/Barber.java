@@ -11,6 +11,8 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "barbers")
 @Getter
@@ -22,7 +24,8 @@ public class Barber extends BaseEntity {
 
     private String document;
 
-    private Double commissionRate;
+    @Column(precision = 8, scale = 2)
+    private BigDecimal commissionRate;
 
     private String skills;
 
